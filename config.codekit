@@ -1060,7 +1060,7 @@
 		"outputAbbreviatedPath": "\/images\/fav.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/iterm.jpg": {
 		"fileType": 16384,
@@ -1071,7 +1071,7 @@
 		"outputAbbreviatedPath": "\/images\/iterm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/stripes.png": {
 		"fileType": 32768,
@@ -1082,7 +1082,7 @@
 		"outputAbbreviatedPath": "\/images\/stripes.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/sublime.jpg": {
 		"fileType": 16384,
@@ -1093,7 +1093,7 @@
 		"outputAbbreviatedPath": "\/images\/sublime.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/wild-cherry.png": {
 		"fileType": 32768,
@@ -1104,7 +1104,16 @@
 		"outputAbbreviatedPath": "\/images\/wild-cherry.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 0,
