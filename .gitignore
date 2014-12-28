@@ -1,0 +1,24 @@
+# OSX
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# SASS
+.sass-cache
+css/base.css
+
+# SublimeText
+*.sublime-project
+*.sublime-workspace
+
+# CodeKit
+js/teacups.js
+js/transit.js
+
+sass
+bower_components
+index.jade
