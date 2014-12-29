@@ -1093,7 +1093,7 @@
 		"outputAbbreviatedPath": "\/images\/sublime.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/images\/wild-cherry.png": {
 		"fileType": 32768,
