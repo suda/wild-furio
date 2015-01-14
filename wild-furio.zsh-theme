@@ -44,22 +44,22 @@ prompt_context() {
 prompt_git() {
   local ref dirty
   if $(git rev-parse --is-inside-work-tree >/dev/null 2>&1); then
-    ZSH_THEME_GIT_PROMPT_DIRTY=' 💀'
+    ZSH_THEME_GIT_PROMPT_DIRTY=' 😱'
     dirty=$(parse_git_dirty)
-    ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git show-ref --head -s --abbrev |head -n1 2> /dev/null)"
+    ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="👍 $(git show-ref --head -s --abbrev |head -n1 2> /dev/null)"
     if [[ -n $dirty ]]; then
       prompt_segment yellow black
     else
       prompt_segment green black
-      dirty=' 🌷'
+      dirty=' 👍'
     fi
-    echo -n "${ref/refs\/heads\//👸  }$dirty"
+    echo -n "${ref/refs\/heads\//🎩  }$dirty"
   fi
 }
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue black '%~'
+  prompt_segment blue white '%~'
 }
 
 # Status:
@@ -69,7 +69,7 @@ prompt_dir() {
 prompt_status() {
   local symbols
   symbols=()
-  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}👹"
+  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{red}%}❕ "
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
 
@@ -86,5 +86,5 @@ build_prompt() {
   prompt_end
 }
 
-PROMPT='%{%f%b%k%}$(build_prompt) 
+PROMPT='%{%f%b%k%}$(build_prompt)
 👉 '
