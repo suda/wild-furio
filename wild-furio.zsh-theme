@@ -76,10 +76,15 @@ prompt_status() {
   [[ -n "$symbols" ]] && prompt_segment red default "$symbols"
 }
 
+prompt_time() {
+  prompt_segment green black
+  echo -n "%D{%H:%M:%S}"
+}
 
 ## Main prompt
 build_prompt() {
   RETVAL=$?
+  prompt_time
   prompt_status
   prompt_git
   prompt_dir
@@ -88,3 +93,9 @@ build_prompt() {
 
 PROMPT='%{%f%b%k%}$(build_prompt)
 👉 '
+
+TMOUT=1
+
+TRAPALRM() {
+  [ "$WIDGET" = "expand-or-complete" ] && [[ "$_lastcomp[insert]" =~ "^automenu$|^menu:" ]] || zle reset-prompt
+}
